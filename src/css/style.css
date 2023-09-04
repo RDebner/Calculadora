@@ -1,0 +1,147 @@
+:root {
+    --backgroud-1 : linear-gradient(180deg ,blue , aqua , blue );
+    --backgroud-2 : linear-gradient(45deg ,aqua ,blue , aqua );
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--backgroud-1);
+}
+
+
+.container .calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: var(--backgroud-2) ;
+    border: 2px solid white;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.apaga {
+    grid: apaga;
+}
+.clean {
+    grid: clean;
+}
+.divide {
+    grid-area: divide;
+}
+.multiplica {
+    grid-area: multiplica;
+}
+.botao1 {
+    grid-area: botao1;
+}
+.botao2 {
+    grid-area: botao2;
+}
+.botao3 {
+    grid-area: botao3;
+}
+.mais {
+    grid-area: mais;
+}
+.botao4 {
+    grid-area: botao4;
+}
+.botao5 {
+    grid-area: botao5;
+}
+.botao6 {
+    grid-area: botao6;
+}
+.menos {
+    grid-area: menos;
+}
+.botao7 {
+    grid-area: botao7;
+}
+.botao8 {
+    grid-area: botao8;
+}
+.botao9 {
+    grid-area: botao9;
+}
+.botao0 {
+    grid-area: botao0;
+}
+.botao-decimal {
+    grid-area:  botao-decimal;
+}
+.botao-igual {
+    grid-area: botao-igual;
+}
+
+
+
+.container .calculadora table {
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    padding-top: 10px;
+    height: 50px;
+}
+
+/* .container .calculadora .linha:last-child button.botao0 {
+    width: 95px;
+} */
+
+.container .calculadora .penultima {
+    justify-content: flex-start;
+    margin-left: 2px;
+}
+
+.container .calculadora ul {
+    height: 220px;
+    width: 80%;
+}
+
+.container .calculadora table tr button {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+
+.container .calculadora table tr button.botao0 {
+    width: 92px;
+}
+
+.container .calculadora table tr button.botao-igual {
+    height: 92px;
+}
+
+.container .calculadora table tr button:hover {
+    background-color: aqua;
+}
+
+
+
+.container .calculadora .input {
+    display: flex;
+    width: 80%;
+}
+
+.container .calculadora .input p {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+
